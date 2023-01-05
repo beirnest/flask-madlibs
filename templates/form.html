@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Angry Libs</title>
+  </head>
+  <body>
+    <h1>Angry Libs</h1>
+    <p id="tagline"">Welcome to the game of Angry Libs!</p>
+    <form action="/story">
+        {% for term in story_terms %}
+            <p>{{ term }}: <input name="{{ term }}"></p>
+        {% endfor %}
+        <button>Go!</button>
+    </form>
+  <body>
+</html>
